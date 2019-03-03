@@ -1,0 +1,28 @@
+# In V-Win menu set
+#   Xmin: 0
+#   Xmax: 3
+#   Ymin: 0
+#   Ymax: 4
+
+For 0->X To 3 Step 0.04
+  For 0->Y To 4 Step 0.04
+
+    0->I
+    (X-2)+(Y-1.5)i->C
+    0->Z
+
+    While I<10 And (ReP Z)^2+(ImP Z)^2<4
+      Z^2+C->Z
+      I+1->I
+    WhileEnd
+
+    If I>=10
+        Then
+      Plot X,Y
+    IfEnd
+
+  Next
+Next
+
+While 1
+WhileEnd

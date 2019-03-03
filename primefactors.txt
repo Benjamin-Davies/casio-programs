@@ -1,0 +1,15 @@
+# Finds the prime factors of a number
+# '?' and '/|'(Small Triangle) can be found in the PRGM menu
+
+?->A
+
+While A>1
+  For 2->B To A
+    If MOD(A,B)=0
+    Then
+      A/B->B
+      B/|
+      Break
+    IfEnd
+  Next
+WhileEnd
