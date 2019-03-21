@@ -7,7 +7,7 @@ While A>1
   For 2->B To A
     If MOD(A,B)=0
     Then
-      A/B->B
+      A/B->A
       B/|
       Break
     IfEnd
